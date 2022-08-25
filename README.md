@@ -31,8 +31,8 @@ I was challanged to
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/raoufrofi/frontend-mentor-1st-project)
-- Live Site URL: [Add live site URL here](https://raoufrofi.github.io/frontend-mentor-1st-project/)
+- Solution URL: [Solution](https://github.com/raoufrofi/frontend-mentor-1st-project)
+- Live Site URL: [Live site](https://raoufrofi.github.io/frontend-mentor-1st-project/)
 
 ## My process
 
@@ -56,7 +56,7 @@ At least
 
 ### Useful resources
 
-The source which has always been helpful for me is [www.youtube.com/codercoder];
+The source which has always been helpful for me is [codercoder](https://www.youtube.com/channel/UCzNf0liwUzMN6_pixbQlMhQ);
 She is an amazing teacher
 
 ## Author
