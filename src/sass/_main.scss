@@ -1,0 +1,37 @@
+@use "globals" as g;
+@use "util" as u;
+
+.main {
+  background-color: g.$bg;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include u.breakpoint-down(700px) {
+    overflow: auto;
+  }
+
+  &__child {
+    width: u.em(630);
+    height: u.em(480);
+    border-radius: 0.8em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    @include u.breakpoint-down(700px) {
+      width: min(100% - 30px, u.em(380));
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+    }
+    &:hover {
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+  }
+}

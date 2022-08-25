@@ -1,0 +1,66 @@
+@use "globals" as g;
+@use "util" as u;
+
+.content {
+  padding: calc(u.em(30) + 1vw);
+  display: flex;
+  gap: u.em(20);
+  flex-direction: column;
+  justify-content: center;
+  background-color: g.$white;
+
+  &__subheading {
+    font-family: g.$montserrat;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+
+  &__title {
+    font-family: g.$fraunces;
+    font-size: u.rem(32);
+    color: g.$dark-blue;
+  }
+
+  &__para {
+    font-family: g.$montserrat;
+    font-size: u.rem(14);
+    font-weight: 500;
+    opacity: 0.6;
+  }
+
+  &__price {
+    font-family: g.$fraunces;
+    font-size: u.rem(32);
+    color: g.$main;
+
+    &--changer {
+      font-size: u.rem(14);
+      font-family: g.$montserrat;
+      text-decoration: line-through;
+      font-weight: lighter;
+      color: black;
+      opacity: 0.6;
+      margin-left: 2em;
+    }
+  }
+
+  &__btn {
+    background-color: g.$btn;
+    border-radius: u.rem(10);
+    color: g.$white;
+    font-weight: 500;
+    padding: 1rem 0;
+    font-family: g.$montserrat;
+    font-size: u.rem(14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: u.rem(10);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: g.$main;
+    }
+  }
+}
